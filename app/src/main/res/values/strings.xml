@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HopeIT</string>
+
+    <!-- MainActivity -->
+    <string name="mainactivity_home">Nasza strona</string>
+    <string name="mainactivity_about">O fundacji</string>
+    <string name="mainactivity_archive">Twoje archiwum</string>
+    <string name="mainactivity_inspiration">Inspiracja</string>
+
+</resources>
