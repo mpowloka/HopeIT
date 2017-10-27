@@ -1,4 +1,4 @@
-package org.hopeit.charapp;
+package org.hopeit.charapp.fragments;
 
 
 import android.os.Bundle;
@@ -8,17 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.hopeit.charapp.R;
 
-public class InspirationFragment extends Fragment {
+
+public class AboutFragment extends Fragment {
     
     public static final String ARG_PAGE = "ARG_PAGE";
 
     private int mPage;
 
-    public static InspirationFragment newInstance(int page) {
+    public static AboutFragment newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
-        InspirationFragment fragment = new InspirationFragment();
+        AboutFragment fragment = new AboutFragment();
         fragment.setArguments(args);
         return fragment;
     }

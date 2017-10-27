@@ -1,9 +1,14 @@
-package org.hopeit.charapp;
+package org.hopeit.charapp.utils;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import org.hopeit.charapp.R;
+import org.hopeit.charapp.fragments.AboutFragment;
+import org.hopeit.charapp.fragments.ArchiveFragment;
+import org.hopeit.charapp.fragments.InspirationFragment;
 
 import java.util.HashMap;
 import java.util.Map;

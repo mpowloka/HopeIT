@@ -1,8 +1,12 @@
-package org.hopeit.charapp;
+package org.hopeit.charapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import org.hopeit.charapp.R;
+import org.hopeit.charapp.activities.HelpActivity;
+import org.hopeit.charapp.activities.MakerActivity;
 
 public class MakerOrHelpActivity extends AppCompatActivity {
 
