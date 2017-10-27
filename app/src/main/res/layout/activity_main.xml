@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/textView"
-            app:srcCompat="@drawable/iconTworcy" />
+            app:srcCompat="@drawable/icon_authors" />
 
 
     </RelativeLayout>
