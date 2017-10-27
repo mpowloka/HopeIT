@@ -1,4 +1,4 @@
-package hopeit.org.hopeit;
+package org.hopeit.charapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package hopeit.org.hopeit;
+package org.hopeit.charapp;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hopeit.org.hopeit">
+    package="org.hopeit.charapp">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="org.hopeit.charapp.MainActivity">
         </activity>
-        <activity android:name=".MakerOrHelpActivity" />
-        <activity android:name=".MakerActivity" />
-        <activity android:name=".HelpActivity" />
+        <activity android:name="org.hopeit.charapp.MakerOrHelpActivity" />
+        <activity android:name="org.hopeit.charapp.MakerActivity" />
+        <activity android:name="org.hopeit.charapp.HelpActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name="org.hopeit.charapp.SplashActivity"
             android:theme="@style/SplashTheme">
 
             <intent-filter>

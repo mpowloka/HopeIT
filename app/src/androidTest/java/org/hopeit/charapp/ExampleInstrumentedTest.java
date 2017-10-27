@@ -1,4 +1,4 @@
-package hopeit.org.hopeit;
+package org.hopeit.charapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

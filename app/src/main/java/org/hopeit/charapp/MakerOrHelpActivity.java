@@ -1,4 +1,4 @@
-package hopeit.org.hopeit;
+package org.hopeit.charapp;
 
 import android.content.Intent;
 import android.os.Bundle;

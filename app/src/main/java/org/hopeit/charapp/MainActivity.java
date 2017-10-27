@@ -1,4 +1,4 @@
-package hopeit.org.hopeit;
+package org.hopeit.charapp;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
