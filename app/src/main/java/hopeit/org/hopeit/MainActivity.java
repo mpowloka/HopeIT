@@ -1,9 +1,12 @@
 package hopeit.org.hopeit;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +22,19 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.menuTabLayout);
         tabLayout.setupWithViewPager(viewPager);
 
+        View view = (RelativeLayout) findViewById(R.id.button);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toMakeOrHelpActivity();
+            }
+        });
 
 
+    }
+
+    public void toMakeOrHelpActivity() {
+        Intent intent = new Intent(this, MakerOrHelpActivity.class);
+        startActivity(intent);
     }
 }
