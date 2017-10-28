@@ -46,6 +46,36 @@
             android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView" />
     </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/mail_us"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:padding="20dp"
+            app:srcCompat="@drawable/icon_email" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="NAPISZ DO NAS"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+   </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -80,12 +110,13 @@
             android:layout_height="150dp"
             android:layout_alignStart="@+id/textView6"
             android:layout_below="@+id/textView6"
-            android:textColor="#fff"
-            android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView" />
+            android:text="ewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
+            android:textColor="#fff" />
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/help_with_money"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.3"
