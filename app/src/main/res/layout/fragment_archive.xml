@@ -5,7 +5,7 @@
     tools:context="org.hopeit.charapp.fragments.AboutFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_content"
+        android:id="@+id/archiveitem_recycler_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -5,7 +5,7 @@
     tools:context="org.hopeit.charapp.fragments.FundraisingFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_content"
+        android:id="@+id/fundraisingitem_recycler_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

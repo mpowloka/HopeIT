@@ -51,15 +51,15 @@ public class ArchiveFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.recycler_content);
+        RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.archiveitem_recycler_content);
         List<Content> toDisplay = new ArrayList<>();
         toDisplay.add(new Content("Sample content", null));
 
-        toDisplay.add(new Content("Secondary sample content", uriToDrawable(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", uriToDrawable(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", uriToDrawable(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", uriToDrawable(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", uriToDrawable(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
 
         recyclerView.setAdapter(
                 new ContentAdapter(toDisplay)
@@ -78,7 +78,7 @@ public class ArchiveFragment extends Fragment {
 
 
 
-    private Uri uriToDrawable(@NonNull Context context, @AnyRes int drawableId) {
+    private Uri drawableToUri(@NonNull Context context, @AnyRes int drawableId) {
         Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
                 "://" + context.getResources().getResourcePackageName(drawableId)
                 + '/' + context.getResources().getResourceTypeName(drawableId)
