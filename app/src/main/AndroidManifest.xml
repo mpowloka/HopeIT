@@ -11,9 +11,12 @@
         android:theme="@style/AppTheme">
         <activity android:name="org.hopeit.charapp.activities.MainActivity"
                 android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name="org.hopeit.charapp.activities.MakerOrHelpActivity" />
-        <activity android:name="org.hopeit.charapp.activities.MakerActivity" />
-        <activity android:name="org.hopeit.charapp.activities.HelpActivity" />
+        <activity android:name="org.hopeit.charapp.activities.MakerOrHelpActivity"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="org.hopeit.charapp.activities.MakerActivity"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="org.hopeit.charapp.activities.HelpActivity"
+            android:theme="@style/Theme.AppCompat.Light"/>
 
         <activity
             android:name="org.hopeit.charapp.activities.SplashActivity"
