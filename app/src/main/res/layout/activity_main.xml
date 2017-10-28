@@ -56,7 +56,7 @@
             android:id="@+id/imageView"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/textView"
             android:layout_toEndOf="@+id/textView"
             app:srcCompat="@drawable/icon_hand" />
 

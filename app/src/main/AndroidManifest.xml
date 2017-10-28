@@ -9,21 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.hopeit.charapp.activities.MainActivity"
-                android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name="org.hopeit.charapp.activities.MakerOrHelpActivity" />
-        <activity android:name="org.hopeit.charapp.activities.MakerActivity" />
-        <activity android:name="org.hopeit.charapp.activities.HelpActivity" />
-
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MakerOrHelpActivity" />
+        <activity android:name=".activities.MakerActivity" />
+        <activity android:name=".activities.HelpActivity" />
         <activity
-            android:name="org.hopeit.charapp.activities.SplashActivity"
+            android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     public void toMakeOrHelpActivity() {
         Intent intent = new Intent(this, MakerOrHelpActivity.class);
         startActivity(intent);
     }
+
 }

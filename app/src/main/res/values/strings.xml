@@ -6,6 +6,9 @@
     <string name="mainactivity_about">O fundacji</string>
     <string name="mainactivity_archive">Twoje archiwum</string>
     <string name="mainactivity_inspiration">Inspiracja</string>
-    <string name="mainactivity_btn_text">CHCĘ POMÓC!</string>
+    <string name="mainactivity_btn_text">CHCĘ POMÓC</string>
+
+    <!-- ArchiveFragment -->
+    <string name="archivefragment_image_content">Image provided by a content author</string>
 
 </resources>
