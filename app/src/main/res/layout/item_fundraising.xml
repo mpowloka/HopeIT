@@ -2,28 +2,28 @@
 <android.support.v7.widget.CardView
  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card"
+    android:id="@+id/fundrisingitem_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/container"
+        android:id="@+id/fundrisingitem_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/image_content"
+            android:id="@+id/fundrisingitem_image_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_status"
+            android:id="@+id/fundrisingitem_text_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -33,31 +33,31 @@
             android:layout_weight="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_title" />
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_text_content" />
 
         <TextView
-            android:id="@+id/text_title"
+            android:id="@+id/fundrisingitem_text_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            app:layout_constraintStart_toStartOf="@+id/image_content"
-            app:layout_constraintTop_toBottomOf="@+id/image_content" />
+            app:layout_constraintStart_toStartOf="@+id/fundrisingitem_image_content"
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_image_content" />
 
         <TextView
-            android:id="@+id/text_content"
+            android:id="@+id/fundrisingitem_text_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            app:layout_constraintEnd_toEndOf="@+id/text_status"
-            app:layout_constraintTop_toBottomOf="@+id/text_status" />
+            app:layout_constraintEnd_toEndOf="@+id/fundrisingitem_text_status"
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_text_status" />
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/fundrisingitem_progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="332dp"
             android:layout_height="wrap_content"
@@ -66,10 +66,10 @@
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_content" />
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_text_content" />
 
         <EditText
-            android:id="@+id/tf_input"
+            android:id="@+id/fundrisingitem_tf_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -78,17 +78,17 @@
             android:inputType="textPersonName"
             android:text="@string/fundraisingfragment_input_text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_progressBar" />
 
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/fundrisingitem_btn_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/fundraisingfragment_btn_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+            app:layout_constraintTop_toBottomOf="@+id/fundrisingitem_progressBar" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>
