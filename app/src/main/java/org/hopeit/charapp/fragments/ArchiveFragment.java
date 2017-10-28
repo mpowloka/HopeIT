@@ -53,13 +53,10 @@ public class ArchiveFragment extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.archiveitem_recycler_content);
         List<Content> toDisplay = new ArrayList<>();
-        toDisplay.add(new Content("Sample content", null));
+        toDisplay.add(new Content("Content description 1", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
+        toDisplay.add(new Content("Content description 2", drawableToUri(getActivity(), R.drawable.photo_girl_glasses))  );
+        toDisplay.add(new Content("Content description 3", drawableToUri(getActivity(), R.drawable.photo_children))  );
 
-        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
-        toDisplay.add(new Content("Secondary sample content", drawableToUri(getActivity(), R.drawable.drawing_girl))  );
 
         recyclerView.setAdapter(
                 new ContentAdapter(toDisplay)

@@ -57,7 +57,7 @@ public class FundraisingFragment extends Fragment {
         List<Fundraising> toDisplay = new ArrayList<>();
 
         toDisplay.add(
-                new Fundraising("Title", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "90%", drawableToUri(getActivity(), R.drawable.photo_child))
+                new Fundraising("Tytuł", "Opis zbiórki", "1400zł (40%)", drawableToUri(getActivity(), R.drawable.photo_child))
         );
 
         recyclerView.setAdapter(new FundraisingAdapter(toDisplay));
