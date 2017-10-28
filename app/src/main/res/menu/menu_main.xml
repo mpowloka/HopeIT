@@ -4,7 +4,13 @@
         android:id="@+id/miProfile"
         android:icon="@drawable/icon_person"
         app:showAsAction="ifRoom|withText"
-        android:title="Profile"
-        android:onClick="onComposeAction">
+        android:title="Profile">
+    </item>
+
+    <item
+        android:id="@+id/miMail"
+        android:icon="@drawable/icon_mail_red"
+        app:showAsAction="ifRoom|withText"
+        android:title="Mail">
     </item>
 </menu>

@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        MainActivityFragmentPagerAdapter pagerAdapter =
+                new MainActivityFragmentPagerAdapter(getSupportFragmentManager(), MainActivity.this);
+
+        viewPager.setAdapter(pagerAdapter);
         viewPager.setAdapter(new MainActivityFragmentPagerAdapter(getSupportFragmentManager(),
                 MainActivity.this));
 
@@ -32,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 ContextCompat.getColor(getApplicationContext(), R.color.colorWhite),
                 ContextCompat.getColor(getApplicationContext(), R.color.colorWhite)
         );
+
+        for (int i = 0; i < tabLayout.getTabCount(); i++) {
+            if (i==0){
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+            tab.setCustomView(pagerAdapter.getTabView(i));}
+        }
 
         View view = (RelativeLayout) findViewById(R.id.button);
         view.setOnClickListener(new View.OnClickListener() {
@@ -56,8 +67,24 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void onComposeAction(MenuItem mi) {
-        toProfileActivity();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.miMail:
+                toMessagesActivity();
+                return true;
+            case R.id.miProfile:
+                toProfileActivity();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void toMessagesActivity() {
+        Intent intent = new Intent(this, MessagesActivity.class);
+        startActivity(intent);
     }
 
     public void toProfileActivity(){

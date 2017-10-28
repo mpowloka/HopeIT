@@ -32,9 +32,9 @@
         </activity>
         <activity
             android:name=".activities.ProfileActivity"
-            android:theme="@style/Theme.AppCompat.Light">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".activities.MessagesActivity"
+            android:theme="@style/Theme.AppCompat.Light"/>
     </application>
 
 </manifest>
