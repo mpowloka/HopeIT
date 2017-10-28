@@ -26,4 +26,8 @@
     <string name="permission_rationale">"Wymagany jest dostęp do kontaktów"
     </string>
 
+    <!-- FundraisingFragment -->
+    <string name="fundraisingfragment_btn_text">WPŁACAM</string>
+    <string name="fundraisingfragment_input_text">wprowadź kwotę</string>
+
 </resources>
