@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             tab.setCustomView(pagerAdapter.getTabView(i));}
         }
 
-        View view = (RelativeLayout) findViewById(R.id.button);
+        View view = (RelativeLayout) findViewById(R.id.btn_submit);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
