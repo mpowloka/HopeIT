@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MakerOrHelpActivity">
+    tools:context=".activities.MakerOrHelpActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,8 +42,8 @@
             android:layout_height="150dp"
             android:layout_alignStart="@+id/textView3"
             android:layout_below="@+id/textView3"
-            android:textColor="#fff"
-            android:text="@string/lipsum" />
+            android:text="@string/lipsum"
+            android:textColor="#fff" />
     </RelativeLayout>
 
 
