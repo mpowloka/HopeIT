@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import org.hopeit.charapp.R;
 
@@ -35,7 +34,7 @@ public class InspirationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inspiration, container, false);
-        TextView textView = (TextView) view.findViewById(R.id.content);
+//        TextView textView = (TextView) view.findViewById(R.id.content);
         return view;
     }
 
