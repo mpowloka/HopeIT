@@ -24,7 +24,7 @@ public class MainActivityFragmentPagerAdapter extends FragmentPagerAdapter {
     private Context context;
     private Map<String, Fragment> fragmentMap;
 
-    private int[] imageResId = { R.drawable.icon_hand};
+    private int[] imageResId = { R.drawable.home_icon};
 
     public View getTabView(int position) {
         // Given you have a custom layout in `res/layout/custom_tab.xml` with a TextView and ImageView

@@ -7,6 +7,6 @@
         android:id="@+id/custom_image_tab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="12dp"/>
+        android:padding="16dp"/>
 
 </android.support.constraint.ConstraintLayout>
