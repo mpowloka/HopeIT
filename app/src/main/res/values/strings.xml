@@ -7,6 +7,7 @@
     <string name="mainactivity_archive">Archiwum</string>
     <string name="mainactivity_inspiration">Inspiracja</string>
     <string name="mainactivity_btn_text">CHCĘ POMÓC</string>
+    <string name="mainactivity_fundraising">Zbiórki</string>
 
     <!-- ArchiveFragment -->
     <string name="archivefragment_image_content">Image provided by a content author</string>
