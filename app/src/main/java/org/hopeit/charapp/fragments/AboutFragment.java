@@ -36,7 +36,6 @@ public class AboutFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
         TextView textView = (TextView) view.findViewById(R.id.content);
-        textView.setText("Fragment #" + mPage);
         return view;
     }
 

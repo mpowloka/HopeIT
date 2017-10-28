@@ -3,6 +3,7 @@ package org.hopeit.charapp.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.menuTabLayout);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.setTabTextColors(
+                ContextCompat.getColor(getApplicationContext(), R.color.colorWhite),
+                ContextCompat.getColor(getApplicationContext(), R.color.colorWhite)
+        );
 
         View view = (RelativeLayout) findViewById(R.id.button);
         view.setOnClickListener(new View.OnClickListener() {
