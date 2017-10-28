@@ -9,23 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.hopeit.charapp.activities.MainActivity"
-                android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name="org.hopeit.charapp.activities.MakerOrHelpActivity"
-            android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name="org.hopeit.charapp.activities.MakerActivity"
-            android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name="org.hopeit.charapp.activities.HelpActivity"
-            android:theme="@style/Theme.AppCompat.Light"/>
-
         <activity
-            android:name="org.hopeit.charapp.activities.SplashActivity"
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activities.MakerOrHelpActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activities.MakerActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light">
 
         </activity>
     </application>

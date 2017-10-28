@@ -6,11 +6,13 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import org.hopeit.charapp.utils.MainActivityFragmentPagerAdapter;
 import org.hopeit.charapp.R;
+import org.hopeit.charapp.utils.MainActivityFragmentPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +46,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void toMakeOrHelpActivity() {
         Intent intent = new Intent(this, MakerOrHelpActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    public void onComposeAction(MenuItem mi) {
+        toProfileActivity();
+    }
+
+    public void toProfileActivity(){
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 }
