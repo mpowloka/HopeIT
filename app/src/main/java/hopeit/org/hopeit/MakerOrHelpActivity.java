@@ -10,9 +10,6 @@ public class MakerOrHelpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maker_or_help);
-
-
-
     }
 
     public void toHelpActivity(){
